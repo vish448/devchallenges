@@ -54,6 +54,7 @@ header {
   line-height: 36px;
   letter-spacing: -0.035em;
   margin-bottom: 65px;
+    max-width: 381px;
 }
 .btn {
   font-family: Space Mono;
@@ -85,21 +86,15 @@ header {
   color: #333333;
 }
 
-@media only screen and (max-width: 960px) {
-  body {
-    padding: 20px;
+@media only screen and (max-width: 992px) {
+  header {
+    padding: 0;
   }
   section.content {
     flex-direction: row;
     justify-content: center;
     padding: 0;
     display: block;
-  }
-  .content__logo {
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
   }
   .content__heading {
     font-size: 48px;
