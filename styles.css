@@ -1,112 +1,118 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 body {
   padding: 0;
-  margin:0;
+  margin: 0;
+}
+
+.wrapper {
+  margin: 4% 4%;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   padding: 40px 77px 40px 77px;
   font-family: Inconsolata;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 25px;
-letter-spacing: -0.08em;
-text-transform: uppercase;
-
-color: #333333;
-
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #333333;
 }
 
-main{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto;
-  padding: 200px 77px 200px 77px;
-  grid-column-gap: 118px;
-  
+.content {
+  display: flex;
+  align-items: center;
+  padding: 100px 77px 100px 77px;
 }
 
-.left {
-  background: url('Scarecrow.png') center center no-repeat;
-background-size: contain;
+.content__image {
+  width: 100%;
+  padding: 12%;
 }
-.right h1 {
+.content__heading {
   font-family: Space Mono;
-font-style: normal;
-font-weight: bold;
-font-size: 64px;
-line-height: 95px;
-letter-spacing: -0.035em;
-max-width: 586px;   
-color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 5.7rem;
+  letter-spacing: -0.035em;
+  color: #333333;
+  margin-bottom: 29px;
 }
-.right p {
+.content__paragraph {
   font-family: Space Mono;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: -0.035em;
-  width: 381px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  margin-bottom: 65px;
 }
-button {
+.btn {
   font-family: Space Mono;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 21px;
-/* identical to box height */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
   border: none;
 
-letter-spacing: -0.035em;
-text-transform: uppercase;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
 
-color: #FFFFFF;
+  color: #ffffff;
   background: #333333;
   outline: none;
   width: 216px;
   height: 68px;
-
 }
-footer {
+.content__footer {
   padding: 40px;
   text-align: center;
   font-family: Montserrat;
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 17px;
-/* identical to box height */
-color: #333333;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #333333;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 960px) {
   body {
     padding: 20px;
   }
-  main {
-    grid-template-columns: 1fr;
+  section.content {
+    flex-direction: row;
+    justify-content: center;
     padding: 0;
-    display:  block;
+    display: block;
   }
-  .left {
+  .content__logo {
     background-size: cover;
     width: 300px;
     height: 300px;
     margin: 0 auto;
   }
-  .right h1 {
+  .content__heading {
     font-size: 48px;
     line-height: 71px;
     letter-spacing: -0.035em;
   }
-  .right p {
+  .content__paragraph {
     font-size: 18px;
     line-height: 27px;
     letter-spacing: -0.035em;
     width: auto;
   }
-  .right button {
+  .btn {
     margin-top: 50px;
     margin-bottom: 50px;
   }
