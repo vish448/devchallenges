@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    max-width: 925px;
+    margin: 0 auto;
+    margin-top: 109px;
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+}
+.header__title {
+    font-family: 'PT Serif';
+    font-size: 2.5rem;
+    letter-spacing: -0.045em;
+    font-weight: bold;
+}
+
+.intro {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+}
+.intro__title {
+text-transform: uppercase;
+
+}
+.intro__title {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.intro__desc {
+    line-height: 1.3rem;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 79px;
+}
+
+.team__member {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+}
+.team__member:nth-child(2),
+.team__member:nth-child(5) {
+    margin-top: 58px;
+}
+.team__member__photo {
+    width: 100%;
+    min-width: 140px;
+}
+.team__member__position {
+    writing-mode: vertical-rl;
+    text-orientation:mixed;
+}
+.team__member__name {
+    grid-column: 1 / -1;
+}
+
+.content__footer {
+  padding: 40px;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+
+@media only screen and (max-width:992px) {
+    .wrapper {
+        padding: 20px;
+        margin-top: 0;
+    }
+    .header {
+        grid-template-columns: 1fr;
+    }  
+    .header__title {
+        line-height: 3.5rem;
+        letter-spacing: -0.045em;
+        margin-bottom: 40px;
+    }
+    .intro_title {
+        margin-bottom: 10px;
+    }
+    .intro__desc {
+        width: auto;
+    
+    }
+   }
