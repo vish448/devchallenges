@@ -23,11 +23,12 @@
         <i class="material-icons md-48 mobile__nav__icon">menu</i>
         <nav class="mobile__nav mobile__nav__off">
             <i class="material-icons md-48 mobile__nav__icon__close">close</i>
+            
             <ul>
-                <li>Home</li>
-                <li>Collection</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li class="box home">Home</li>
+                <li class="box collection">Collection</li>
+                <li class="box about">About</li>
+                <li class="box contact">Contact</li>
             </ul>
         </nav>
     </header>
@@ -53,17 +54,29 @@
         </div>
     </div>
     <footer class="footer">vish448@DevChallenges.io</footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js" type="text/javascript"></script>
     <script>
         let mobileMenu = document.querySelector('.mobile__nav__icon');
         mobileMenu.addEventListener('click', function(){
             document.querySelector('nav.mobile__nav').classList.toggle("mobile__nav__off"); 
-        });
+            gsap.from(".box", {
+  duration: 2,
+  scale: 0.5, 
+  opacity: 0, 
+  delay: 0.5, 
+  stagger: 0.2,
+  ease: "elastic", 
+  force3D: true
+});  
+    });
 
         let mobileMenuClose = document.querySelector('.mobile__nav__icon__close');
         mobileMenuClose.addEventListener('click', function(){
             document.querySelector('nav.mobile__nav').classList.add("mobile__nav__off"); 
         });
+    </script>
+    <script>
+        
     </script>
 </body>
 </html>
