@@ -1,3 +1,3 @@
-Dev challenges Interior Consultant
+Dev challenges recipe blog page
 
 ![](./img/screenshot.png)
