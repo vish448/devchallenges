@@ -1,6 +1,6 @@
 # Dev challenges  🌟
 
-Challenges/Category ✍️  | Requirements 🎮 | Solutions 🚀 | Screenshots 📷
+Challenges / Category ✍️  | Requirements 🎮 | Solutions 🚀 | Screenshots 📷
 ------------ | ------------- | ------------- | -------------
 404 not found page / UI | Create a 404 not found page following the design. The page should be responsive. | https://404notfounddevchallenge.netlify.app | ![](./img/screenshot1.png)
 My Team page  / UI| Create my team page following the design. The page should be responsive. | https://myteampagedc.netlify.app | ![](./img/screenshot2.png)
