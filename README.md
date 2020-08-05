@@ -6,3 +6,4 @@ Challenges / Category ✍️  | Requirements 🎮 | Solutions 🚀 | Screenshots
 My Team page  / UI| Create my team page following the design. The page should be responsive. | https://myteampagedc.netlify.app | ![](./img/screenshot2.png)
 Interior Consultant / UI | Create a homepage following the design. The page should be responsive. | https://interiorconsultantdc.netlify.app | ![](./img/screenshot3.png)
 Recipe page / UI | Challenge: Create a recipe page following the given design. You can use your own recipe and remember to put the source. The page should be responsive. | https://recipeblogpagedc.netlify.app | ![](./img/screenshot4.png)
+Gallery page / UI | Challenge: Create a static page with HTML and CSS following the designs. You can give it your personal styles by using different images or text. | https://mygallerydc.netlify.app/ | ![](./img/screenshot5.png)
