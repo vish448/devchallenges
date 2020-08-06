@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout Page</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -15,6 +12,108 @@
     />
   </head>
   <body data-theme="light">
+    <header class="header">
+      <h1 class="title">Checkout</h1>
+    </header>
+    <div class="contentWrapper">
+      <form>
+      <div class="content contactInformation">
+        <h2 class="content__title">Contact Information</h2>
+        <div>
+          <label for="email">E-mail</label>
+          <i class="material-icons icn">email</i><input type="email" id="email" name="email" placeholder="Enter your email" />
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <i class="material-icons icn">phone</i><input type="tel" id="phone" name="phone" placeholder="Enter your phone" />
+        </div>
+        <h2 class="content__title">Shipping Address</h2>
+        <div>
+          <label for="fullName">Full Name</label>
+          <i class="material-icons icn">account_circle</i><input type="text" id="fullName" name="fullName" placeholder="Rodney Cotton" />
+        </div>
+        <div>
+          <label for="address">Address</label>
+          <i class="material-icons icn">home</i><input type="tel" id="address" name="address" placeholder="Your address.." />
+        </div>
+        <div>
+          <label for="city">City</label>
+          <i class="material-icons icn">location_city</i><input type="tel" id="city" name="city" placeholder="Your city.." />
+        </div>
+        <div class="postal">
+          <div>
+            <label for="country">Country</label>
+            <i class="material-icons icn">public</i><input type="tel" id="country" name="country" placeholder="Your country.." />
+          </div>
+          <div>
+            <label for="postal">Postal Code</label>
+          <i class="material-icons icn">markunread_mailbox</i><input type="tel" id="postal code" name="postal code" placeholder="Your postal code.." />
+          </div>
+          
+        </div>
+        <div class="saveInfoCheckbox">
+          <input type="checkbox" id="checkbox" name="checkbox" />
+          <label for="checkbox">
+            Save this information for next time
+          </label>
+        </div>
+
+        <input type="submit" class="btn" value="Continue">
+
+      </div>
+      </form>
+      <div class="sidebar">
+        <div class="sidebarWrapper">
+          <div class="items-list">
+          <div class="item">
+            <img src="./img/photo1.png" alt="photo1">
+            <div class="item-details">
+              <h3 class="item__name">
+                Vintage Backpack
+              </h3>
+              <div class="item__price">
+                <p class="item__sale__price">$54.99</p>
+                <p class="item__actual__price">$94.99</p>
+              </div>
+              <div class="item__quantity">
+                <div class="minusBtn">-</div>
+                <div class="quantity">1</div>
+                <div class="plusBtn">+</div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./img/photo2.png" alt="photo1">
+            <div class="item-details">
+              <h3 class="item__name">
+                Levi Shoes
+              </h3>
+              <div class="item__price">
+                <p class="item__sale__price">$74.99</p>
+                <p class="item__actual__price">$124.99</p>
+              </div>
+              <div class="item__quantity">
+                <div class="minusBtn">-</div>
+                <div class="quantity">1</div>
+                <div class="plusBtn">+</div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <hr/>
+          <div class="shippingTotal">
+            <p class="shippingTotal__title">Shipping</p>
+            <p class="shippingTotal__price">$19</p>
+          </div>
+          <hr/>
+          <div class="finalTotal">
+            <p class="finalTotal__title">Total</p>
+            <p class="finalTotal__price">$148.98</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">vish448@DevChallenges.io</footer>
     <script
