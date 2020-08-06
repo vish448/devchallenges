@@ -1,3 +1,3 @@
-Dev challenges recipe blog page
+Dev challenges checkout page
 
 ![](./img/screenshot.png)
