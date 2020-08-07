@@ -1,7 +1,7 @@
 /* global Variables */
 :root {
   --montserrat: "Montserrat", sans-serif;
-  --body-width: 1280px;
+  --body-width: 1024px;
 }
 [data-theme="dark"] {
   --main-bg-color: #181719;
