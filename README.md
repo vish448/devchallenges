@@ -7,3 +7,4 @@ My Team page  / UI| Create my team page following the design. The page should be
 Interior Consultant / UI | Create a homepage following the design. The page should be responsive. | https://interiorconsultantdc.netlify.app | ![](./img/screenshot3.png)
 Recipe page / UI | Challenge: Create a recipe page following the given design. You can use your own recipe and remember to put the source. The page should be responsive. | https://recipeblogpagedc.netlify.app | ![](./img/screenshot4.png)
 Gallery page / UI | Challenge: Create a static page with HTML and CSS following the designs. You can give it your personal styles by using different images or text. | https://mygallerydc.netlify.app/ | ![](./img/screenshot5.png)
+Checkout Page / UI | Challenge: Create a checkout page following the design. You don’t need to use JS in this challenge but use correct input types and validation. | https://checkoutpagedc.netlify.app | ![](./img/screenshot6.png)
