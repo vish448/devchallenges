@@ -62,7 +62,6 @@ input {
   height: 56px;
   border: 1px solid var(--grayColor3);
   border-radius: 12px;
-  max-width: 465px;
   width: 100%;
   padding: 18px 18px 18px 56px;
 }
@@ -74,10 +73,10 @@ header {
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin-bottom: 100px;
+  grid-gap: 30px;
 }
 
 .content {
-  width: 60%;
   display: grid;
 }
 .content__title {
@@ -104,9 +103,8 @@ header {
 .postal :nth-child(1) {
   margin-right: 30px;
 }
-.postal :nth-child(2) {
-  width: 100%;
-  max-width: 217px;
+.postal i {
+  width: auto;
 }
 .saveInfoCheckbox label {
   display: inline;
@@ -141,6 +139,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 30px;
+  grid-gap:10px
 }
 .item:last-child{
   margin-bottom: 100px;
@@ -215,6 +214,27 @@ footer {
   color: var(--lightGreyColor);
   font-family: var(--montserrat);
 }
-@media only screen and (max-width: 991px) {
-  
+@media only screen and (max-width: 1024px) {
+  .contentWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contentWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sidebar {
+    margin-bottom: 100px;
+  }
+  body {
+    padding: 15px;
+  }
+  .content {
+    width: 100%;
+  }
+  .sidebarWrapper {
+    padding: 15px;
+  }
 }

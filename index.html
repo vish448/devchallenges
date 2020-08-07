@@ -16,38 +16,38 @@
       <h1 class="title">Checkout</h1>
     </header>
     <div class="contentWrapper">
-      <form>
+      <form onsubmit="success()">
       <div class="content contactInformation">
         <h2 class="content__title">Contact Information</h2>
         <div>
           <label for="email">E-mail</label>
-          <i class="material-icons icn">email</i><input type="email" id="email" name="email" placeholder="Enter your email" />
+          <i class="material-icons icn">email</i><input type="email" id="email" name="email" placeholder="Enter your email" required />
         </div>
         <div>
           <label for="phone">Phone</label>
-          <i class="material-icons icn">phone</i><input type="tel" id="phone" name="phone" placeholder="Enter your phone" />
+          <i class="material-icons icn">phone</i><input type="tel" id="phone" name="phone" placeholder="Enter your phone ie. 012-345-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
         </div>
         <h2 class="content__title">Shipping Address</h2>
         <div>
           <label for="fullName">Full Name</label>
-          <i class="material-icons icn">account_circle</i><input type="text" id="fullName" name="fullName" placeholder="Rodney Cotton" />
+          <i class="material-icons icn">account_circle</i><input type="text" id="fullName" name="fullName" placeholder="Rodney Cotton" required />
         </div>
         <div>
           <label for="address">Address</label>
-          <i class="material-icons icn">home</i><input type="tel" id="address" name="address" placeholder="Your address.." />
+          <i class="material-icons icn">home</i><input type="tel" id="address" name="address" placeholder="Your address.." required />
         </div>
         <div>
           <label for="city">City</label>
-          <i class="material-icons icn">location_city</i><input type="tel" id="city" name="city" placeholder="Your city.." />
+          <i class="material-icons icn">location_city</i><input type="text" id="city" name="city" placeholder="Your city.." required />
         </div>
         <div class="postal">
           <div>
             <label for="country">Country</label>
-            <i class="material-icons icn">public</i><input type="tel" id="country" name="country" placeholder="Your country.." />
+            <i class="material-icons icn">public</i><input type="text" id="country" name="country" placeholder="Your country.." required />
           </div>
           <div>
             <label for="postal">Postal Code</label>
-          <i class="material-icons icn">markunread_mailbox</i><input type="tel" id="postal code" name="postal code" placeholder="Your postal code.." />
+          <i class="material-icons icn">markunread_mailbox</i><input type="text" id="postal code" name="postal code" placeholder="Your postal code.."  />
           </div>
           
         </div>
@@ -120,5 +120,10 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"
       type="text/javascript"
     ></script>
+    <script>
+      function success() {
+        alert('Form Successfully Submitted');
+      }
+    </script>
   </body>
 </html>
