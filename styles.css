@@ -1,0 +1,98 @@
+/* global Variables */
+:root {
+    --montserrat: "Montserrat", sans-serif;
+    --body-width: 980px;
+    --popins: 'Poppins', sans-serif;
+    --noto-sans-jp: 'Noto Sans JP', sans-serif;
+    --ubuntu-mono: 'Ubuntu Mono', monospace;
+  }
+  [data-theme="dark"] {
+    --main-bg-color: #181719;
+    --color: #ffffff;
+    --navBg: #FAFBFD;
+    --contentBg: #FFFFFF;
+    --red-color: #F7542E;
+    --nav-link-color: #9e9e9e;
+    --nav-link-active-color: #090F31;
+  }
+  [data-theme="light"] {
+    --main-bg-color: #f9f9f9;
+    --color: #000000;
+    --navBg: #FAFBFD;
+    --contentBg: #FFFFFF;
+    --red-color: #F7542E;
+    --nav-link-color: #9e9e9e;
+    --nav-link-active-color: #090F31;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--montserrat);
+    font-size: 1em;
+  }
+  
+  body {
+    background-color: var(--main-bg-color);
+    color: var(--color);
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  a{
+    font-family: var(--noto-sans-jp);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .appWrapper {
+      display: flex;
+  }
+
+  .sideNav {
+      min-height: 100vh;
+      width: 240px;
+      position: static;
+      overflow-y: auto;
+      float:left;
+      background: var(--navBg);
+  }
+  .navigation a {
+      display: block;
+      text-align: center;
+      color: var(--nav-link-color);
+      text-decoration: none;
+      margin-bottom: 25px;
+    }
+    .navigation a:hover {
+        color: var(--nav-link-active-color);
+        transition: color 1.8ms ease-out 1.8ms;
+    }
+  .navigation a.active {
+      color: var(--nav-link-active-color);
+  }
+  header {
+      font-family: var(--popins);
+      padding-top: 50px;
+      font-weight: 600;
+      font-size: 0.8em;
+      line-height: 1.1em;
+      text-align: center;
+      margin-bottom: 122px;
+  }
+  header span {
+      color: var(--red-color);
+  }
+  .contentWrapper {
+      width: 100%;
+      border: 1px solid green;
+      min-height: 100vh;
+      overflow-y: auto;
+  }
+
+  footer {
+      position: fixed;
+      bottom: 0;
+  }
