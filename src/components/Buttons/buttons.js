@@ -11,12 +11,15 @@ const Button = ({color,
     type,
     value,
     variant,
-    shadow} ) => {
+    disabledshadow,
+    title} ) => {
     return (
         <button 
-            className={`btn ${name}`}
-            color= {color}
-            shadow={shadow}
+            className={`btn ${name} ${color}`}
+            disabledshadow = {disabledshadow}
+            variant={variant}
+            onClick= {onClick}
+            title={title}
             >
          {text}
         </button>

@@ -14,13 +14,17 @@ class App extends React.Component {
               <ButtonTitle title={"<Button />"} />
               <Button 
                 text={"Default"} 
-                name={"default"} />
+                name={"default"}
+                color={"default"}
+                onClick={()=>alert( "<Button text={'default'} />" )} />
             </div>
             <div>
               <ButtonTitle title={"&:hover, &:focus "} />
               <Button 
                 text={"Default"}
-                name={"default-hover"} />
+                name={"default-hover"}
+                color={"default"}
+                 />
             </div>
           </Row>
           <Row>
@@ -28,13 +32,19 @@ class App extends React.Component {
               <ButtonTitle title={"<Button variant=\"outline\" />"} />
               <Button 
                 text={"Default"}
-                name={"outline"} />
+                name={"outline"}
+                variant={"outline"}
+                color={"outline"}
+                  />
             </div>
             <div>
               <ButtonTitle title={"&:hover, &:focus"} />
               <Button 
                 text={"Default"}
-                name={"outline-hover"} />
+                name={"outline-hover"}
+                variant={"outline"}
+                color={"outline"} 
+                 />
             </div>
           </Row>
           <Row>
@@ -42,13 +52,30 @@ class App extends React.Component {
               <ButtonTitle title={"<Button variant=\"text\" />"} />
               <Button 
                 text={"Default"}
-                name={"txt"} />
+                name={"txt"}
+                variant={"text"}
+                color={"outline-text"}
+                />
             </div>
             <div>
               <ButtonTitle title={"&:hover, &:focus"} />
               <Button 
                 text={"Default"}
-                name={"txt-btn-hover"} />
+                name={"txt-btn-hover"}
+                variant={"text"}
+                color={"outline-text"}
+                />
+            </div>
+          </Row>
+          <Row>
+            <div>
+              <ButtonTitle title={"<Button disableShadow />"} />
+              <Button 
+                text={"Default"}
+                name={"disabledShadow"}
+                disabledshadow="true"
+                color={"primary"}
+                />
             </div>
           </Row>
         </Layout>

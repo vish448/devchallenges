@@ -6,7 +6,8 @@
     --noto-sans-jp: 'Noto Sans JP', sans-serif;
     --ubuntu-mono: 'Ubuntu Mono', monospace;
     --primary-color: #3D5AFE;
-    --primary-color-hover: rgba(41, 98, 255, 0.1);;
+    --primary-color-hover: rgba(41, 98, 255, 0.1);
+    --white-color: #ffffff;
   }
   [data-theme="dark"] {
     --main-bg-color: #181719;
