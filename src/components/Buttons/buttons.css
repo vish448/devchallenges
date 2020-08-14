@@ -39,9 +39,20 @@ button {
 .btn.outline-hover,
 .btn.outline-hover:hover,
 .btn.outline-hover:focus {
-    background: rgba(41, 98, 255, 0.1);
+    background: var(--primary-color-hover);
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
     outline: 0;
 }
 
+.btn.txt {
+    color: var(--primary-color);
+    background: transparent;
+}
+
+.btn.txt-btn-hover,
+.btn.txt-btn-hover:hover,
+.btn.txt-btn-hover:focus {
+    color: var(--primary-color);
+    background: var(--primary-color-hover);
+}

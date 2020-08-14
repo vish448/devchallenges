@@ -37,6 +37,20 @@ class App extends React.Component {
                 name={"outline-hover"} />
             </div>
           </Row>
+          <Row>
+            <div>
+              <ButtonTitle title={"<Button variant=\"text\" />"} />
+              <Button 
+                text={"Default"}
+                name={"txt"} />
+            </div>
+            <div>
+              <ButtonTitle title={"&:hover, &:focus"} />
+              <Button 
+                text={"Default"}
+                name={"txt-btn-hover"} />
+            </div>
+          </Row>
         </Layout>
       </div>
     );
