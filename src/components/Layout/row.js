@@ -1,6 +1,6 @@
 import React from "react";
-import "./buttons.css";
-import "./layout/row.css"
+import "../Buttons/buttons.css";
+import "./row.css"
 
 const Row = ({children}) => {
     return (

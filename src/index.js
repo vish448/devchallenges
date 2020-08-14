@@ -12,16 +12,22 @@ class App extends React.Component {
           <Row>
             <div>
               <ButtonTitle title={"<Button />"} />
-              <Button text={"Default"} />
+              <Button 
+                text={"Default"} 
+                name={"default"}
+                shadow={"box-shadow"} />
             </div>
             <div>
-              <ButtonTitle title={"<Button2 />"} />
-              <Button text={"Default 2"} />
+              <ButtonTitle title={"&:hover, &:focus "} />
+              <Button 
+                text={"Default"}
+                name={"default-hover"}
+                shadow={"box-shadow"} />
             </div>
           </Row>
           <Row>
             <div>
-              <ButtonTitle title={"<Button />"} />
+              <ButtonTitle title={"<Button variant=\"outline\" />"} />
               <Button text={"Default 2"} />
             </div>
           </Row>

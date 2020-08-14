@@ -10,10 +10,13 @@ const Button = ({color,
     text,
     type,
     value,
-    variant } ) => {
+    variant,
+    shadow} ) => {
     return (
-        
-        <button>
+        <button 
+            className={`btn ${name} ${shadow}`}
+            color= {color}
+            >
          {text}
         </button>
     )
