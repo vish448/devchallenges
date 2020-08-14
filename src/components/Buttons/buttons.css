@@ -68,3 +68,11 @@ button[disabledshadow="true"] {
     box-shadow: none;
     outline: 0;
 }
+button[disabled] {
+    background-color: var(--disabled-button-bg-color);
+    color: var(--disabled-button-text-color);
+}
+button[variant="text"][disabled] {
+    background-color: transparent;
+    color: var(--disabled-button-text-color);
+}

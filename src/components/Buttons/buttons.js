@@ -20,6 +20,7 @@ const Button = ({color,
             variant={variant}
             onClick= {onClick}
             title={title}
+            disabled={disabled}
             >
          {text}
         </button>
