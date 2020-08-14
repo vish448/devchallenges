@@ -14,21 +14,27 @@ class App extends React.Component {
               <ButtonTitle title={"<Button />"} />
               <Button 
                 text={"Default"} 
-                name={"default"}
-                shadow={"box-shadow"} />
+                name={"default"} />
             </div>
             <div>
               <ButtonTitle title={"&:hover, &:focus "} />
               <Button 
                 text={"Default"}
-                name={"default-hover"}
-                shadow={"box-shadow"} />
+                name={"default-hover"} />
             </div>
           </Row>
           <Row>
             <div>
               <ButtonTitle title={"<Button variant=\"outline\" />"} />
-              <Button text={"Default 2"} />
+              <Button 
+                text={"Default"}
+                name={"outline"} />
+            </div>
+            <div>
+              <ButtonTitle title={"&:hover, &:focus"} />
+              <Button 
+                text={"Default"}
+                name={"outline-hover"} />
             </div>
           </Row>
         </Layout>

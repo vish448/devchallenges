@@ -5,6 +5,7 @@
     --popins: 'Poppins', sans-serif;
     --noto-sans-jp: 'Noto Sans JP', sans-serif;
     --ubuntu-mono: 'Ubuntu Mono', monospace;
+    --primary-color: #3D5AFE;
   }
   [data-theme="dark"] {
     --main-bg-color: #181719;

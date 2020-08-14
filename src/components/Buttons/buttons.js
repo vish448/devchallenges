@@ -14,8 +14,9 @@ const Button = ({color,
     shadow} ) => {
     return (
         <button 
-            className={`btn ${name} ${shadow}`}
+            className={`btn ${name}`}
             color= {color}
+            shadow={shadow}
             >
          {text}
         </button>
